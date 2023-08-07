@@ -1,6 +1,6 @@
 $(function () {
   // TODO: Add a listener for click events on the save button.
-  $(".save-btn").on("click", function () {
+  $(".saveBtn").on("click", function () {
     const userInput = $(this).siblings("textarea").val();
     const timeBlockId = $(this).parent().attr("id");
 
@@ -37,6 +37,6 @@ $(function () {
   $("#currentDay").text(currentDate);
 
   window.onbeforeunload = function () {
-    $(".save-btn").trigger("click");
+    $(".saveBtn").trigger("click");
   };
 });
